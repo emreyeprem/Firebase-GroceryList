@@ -1,0 +1,67 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="site.css" />
+</head>
+<body>
+  <div id="mainDiv">
+<h2>Make Your Grocery List</h2>
+    <form id="mainContainer">
+      <div class="form-row">
+        <div class="col-7">
+          <input id="categoryName" class="inputBox" type="text" class="form-control" placeholder="Add Category">
+        </div>
+        <div class="col">
+          <input id="itemTitle" class="inputBox" type="text" class="form-control" placeholder="Enter an item">
+        </div>
+        <div class="col">
+          <button id="addButton">Add</button>
+        </div>
+      </div>
+    </form>
+
+
+<div id="templateComeIn">
+
+</div>
+</div>
+
+<!-- <select id="GrocerySelect">
+  <option value="regular">Regular Coffee</option>
+  <option value="mocha">Mocha Coffee</option>
+  <option value="ice">Ice Coffee</option>
+</select>
+<button id="btnOrder">Add</button> -->
+
+<!-- <h3>Orders</h3>
+<ul id="ordersList">
+
+
+</ul> -->
+
+</body>
+
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAPEdAjcs7rMT5l6xxnzPqrz0Gx5QSV4Yk",
+    authDomain: "groceryappfirebaseproject.firebaseapp.com",
+    databaseURL: "https://groceryappfirebaseproject.firebaseio.com",
+    projectId: "groceryappfirebaseproject",
+    storageBucket: "groceryappfirebaseproject.appspot.com",
+    messagingSenderId: "228349363469"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="app.js"></script>
+</html>
